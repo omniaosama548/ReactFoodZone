@@ -6,7 +6,7 @@ import App from './App.jsx'
 import { CartProvider } from './context/CartContext.jsx';
 
 createRoot(document.getElementById('root')).render(
-  <BrowserRouter>
+  <BrowserRouter basename="/ReactFoodZone">
   <CartProvider>
     <App />
     </CartProvider>
