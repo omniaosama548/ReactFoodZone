@@ -1,0 +1,118 @@
+const products = [
+  {
+    id: 1,
+    name: "Pizza Margherita",
+    category: "Italian",
+    price: 80,
+    image: "https://cdn.pixabay.com/photo/2017/12/09/08/18/pizza-3007395_1280.jpg"
+  },
+  {
+    id: 2,
+    name: "Spaghetti Bolognese",
+    category: "Italian",
+    price: 90,
+    image: "https://www.tasteofhome.com/wp-content/uploads/2024/03/Margherita-Pizza-_EXPS_TOHVP24_275515_MF_02_28_1.jpg"
+  },
+  {
+    id: 3,
+    name: "Sushi Roll",
+    category: "Japanese",
+    price: 120,
+    image: "https://cdn.pixabay.com/photo/2016/03/05/19/02/sushi-1238248_1280.jpg"
+  },
+  {
+    id: 4,
+    name: "Cheeseburger",
+    category: "American",
+    price: 70,
+    image: "https://cdn.pixabay.com/photo/2014/10/23/18/05/burger-500054_1280.jpg"
+  },
+  {
+    id: 5,
+    name: "Chicken Shawarma",
+    category: "Middle Eastern",
+    price: 60,
+    image: "https://cdn.pixabay.com/photo/2018/06/18/16/05/shawarma-3482749_1280.jpg"
+  },
+  {
+    id: 6,
+    name: "Falafel Sandwich",
+    category: "Middle Eastern",
+    price: 40,
+    image: "https://plus.unsplash.com/premium_photo-1671394138161-209f57a074fd?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTIxfHxmb29kc3xlbnwwfHwwfHx8MA%3D%3D"
+  },
+  {
+    id: 7,
+    name: "Tacos",
+    category: "Mexican",
+    price: 75,
+    image: "https://images.unsplash.com/photo-1680345576151-bbc497ba969e?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTE0fHxmb29kc3xlbnwwfHwwfHx8MA%3D%3D"
+  },
+  {
+    id: 8,
+    name: "Pad Thai",
+    category: "Thai",
+    price: 95,
+    image: "https://www.recipetineats.com/tachyon/2018/07/Spaghetti-Bolognese.jpg"
+  },
+  {
+    id: 9,
+    name: "Butter Chicken",
+    category: "Indian",
+    price: 100,
+    image: "https://images.ctfassets.net/uexfe9h31g3m/6QtnhruEFi8qgEyYAICkyS/ab01e9b1da656f35dd1a721c810162a0/Spaghetti_bolognese_4x3_V2_LOW_RES.jpg?fit=thumb&fm=webp&h=1125&q=100&w=2000"
+  },
+  {
+    id: 10,
+    name: "Croissant",
+    category: "French",
+    price: 30,
+    image: "https://images.unsplash.com/photo-1674876105548-520cc1e2c82a?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTE4fHxmb29kc3xlbnwwfHwwfHx8MA%3D%3D"
+  },
+  {
+    id: 11,
+    name: "Fried Chicken",
+    category: "American",
+    price: 85,
+    image: "https://images.unsplash.com/photo-1658853576987-23d2ca596e47?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTE2fHxmb29kc3xlbnwwfHwwfHx8MA%3D%3D"
+  },
+  {
+    id: 12,
+    name: "Beef Kebab",
+    category: "Middle Eastern",
+    price: 90,
+    image: "https://images.unsplash.com/photo-1742646803028-94ac3bd00762?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTE5fHxmb29kc3xlbnwwfHwwfHx8MA%3D%3D"
+  },
+  {
+    id: 13,
+    name: "Tempura",
+    category: "Japanese",
+    price: 110,
+    image: "https://plus.unsplash.com/premium_photo-1668095398227-c943ddb69d89?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OXx8Zm9vZHN8ZW58MHx8MHx8fDA%3D"
+  },
+  {
+    id: 14,
+    name: "Lasagna",
+    category: "Italian",
+    price: 95,
+    image: "https://images.unsplash.com/photo-1583623025817-d180a2221d0a?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8Zm9vZHN8ZW58MHx8MHx8fDA%3D"
+  },
+  {
+    id: 15,
+    name: "Greek Salad",
+    category: "Greek",
+    price: 55,
+    image: "https://plus.unsplash.com/premium_photo-1676466901396-125e349e847e?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+  },
+  {
+    id: 16,
+    name: "Paella",
+    category: "Spanish",
+    price: 105,
+    image: "https://images.unsplash.com/photo-1592545287571-8afd34aada57?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+  }
+];
+
+localStorage.setItem("products",JSON.stringify(products))
+export default products;
+console.log(products)
